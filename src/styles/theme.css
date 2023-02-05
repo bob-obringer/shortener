@@ -1,0 +1,30 @@
+.site-theme {
+  --oc-typo-heading-margin-top: 0.25em;
+  --oc-typo-heading-weight-light: 100;
+  --oc-typo-heading-weight-medium: 400;
+  --oc-typo-heading-weight-heavy: 700;
+}
+
+.ods-light-mode {
+  --site-background: var(--ods-color-light-blue-2);
+  --site-header-background: var(--ods-color-light-blue-1);
+  --site-header-border: var(--ods-color-light-blue-3);
+  --card-border-color: var(--ods-color-light-blue-4);
+  --card-background-color: var(--ods-color-light-blue-3);
+  --card-hover-border-color: var(--ods-color-light-blue-5);
+  --card-hover-background-color: var(--ods-color-light-blue-4);
+  --card-active-border-color: var(--ods-color-light-blue-8);
+  --card-active-background-color: var(--ods-color-light-blue-6);
+}
+
+.ods-dark-mode {
+  --site-background: var(--ods-color-dark-blue-2);
+  --site-header-background: var(--ods-color-dark-blue-1);
+  --site-header-border: var(--ods-color-dark-blue-3);
+  --card-border-color: var(--ods-color-dark-blue-4);
+  --card-background-color: var(--ods-color-dark-blue-3);
+  --card-hover-border-color: var(--ods-color-dark-blue-5);
+  --card-hover-background-color: var(--ods-color-dark-blue-4);
+  --card-active-border-color: var(--ods-color-dark-blue-8);
+  --card-active-background-color: var(--ods-color-dark-blue-6);
+}

@@ -1,8 +1,13 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  experimental: {
-    appDir: true,
-  },
-}
+const nextConfig = () => {
+  /** @type {import('next').NextConfig} */
+  const config = {
+    experimental: {
+      appDir: true,
+    },
+    swcMinify: true,
+  };
 
-module.exports = nextConfig
+  return config;
+};
+
+module.exports = nextConfig;

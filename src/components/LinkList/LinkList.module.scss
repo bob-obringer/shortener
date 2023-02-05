@@ -1,0 +1,26 @@
+.linkItem {
+  border-radius: 4px;
+  
+  padding: 10px;
+  border: 1px solid var(--card-border-color);
+  background-color: var(--card-background-color);
+  transition: border var(--ods-transition-normal), background-color var(--ods-transition-normal);
+  cursor: pointer;
+  
+  &:hover {
+    border: 1px solid var(--card-hover-border-color);
+    background-color: var(--card-hover-background-color);
+  }
+  
+  &.active {
+    border: 1px solid var(--card-active-border-color);
+    background-color: var(--card-active-background-color);
+  }
+}
+
+.count {
+  background-color: var(--site-background);
+  border: 1px solid var(--card-border-color);
+  border-radius: 6px;
+  padding: 2px 10px;
+}
