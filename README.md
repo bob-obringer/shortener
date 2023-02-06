@@ -25,7 +25,7 @@ The shortener uses the following:
   - Allows editing link, including optional friendly name
   - Allows deleting of link
   - Allows navigation to shortened link, incrementing count, and redirecting to full uri
-  - Validates url and provides appropraite error state
+  - Validates url and provides appropriate error state
 - Fully responsive
 - Fully accessible and navigable with keyboard exclusively
 - Header download button to download JSON of current state of links
@@ -63,9 +63,9 @@ pnpm e2e:debug
 
 ### Styling / Themeing / Components
 - `ods-base` is a library I've slowly been throwing together for personal projects.  This project has a few goals (which need to be better defined):
-  - Provide a suite of fully themeable primative components
+  - Provide a suite of fully themeable primitive components
   - All components are fully accessible with minimal (no) overhead to the application 
-  - Be minimially opinionated.  Consuming applications shouldn't have to fight their component library/design system when integrating.  Let the applications have opinions, not the library.
+  - Be minimally opinionated.  Consuming applications shouldn't have to fight their component library/design system when integrating.  Let the applications have opinions, not the library.
   - Nearly everything should be themeable via simple css variables.
   - Any number of color modes can be and applied to any section of the page just by setting a class
   - _**Provide a platform which enhances collaboration between design and engineering teams and allows them to rapidly develop a fully customized experience.**_
@@ -84,6 +84,6 @@ The combination of these have been a great experience and made it easy to focus 
 - Light mode is mostly working but colors still need work.  To manually switch to light mode, on the html tag change the `ods-dark-mode` class name to `ods-light-mode` (these can be applied to specific containers further down to mix modes)
 - On mobile, if an item is deleted, it switches to "create" instead of flipping back to the list view.  Slightly weird UX
 - Destroy buttons should have confirm dialogs
-- Next 13 keeps adding a meta `viewport` tag which overwrites my own.  This causes a weird issue on mobile where tapping into a text field causes it to zoom.  I've tried removing the incorrect tag programatically but it still exhibits same bahavior.  Need to dig further into the cause and potential wordarounds.
-- Next 13's server components are incompatible with React Context, preventing use of React Aria's SSR context provider.  This throws a lot of warnings to the console, and in some cases can cause an additional render during hydration.  Any performance impact is not noticable to the user.
+- Next 13 keeps adding a meta `viewport` tag which overwrites my own.  This causes a weird issue on mobile where tapping into a text field causes it to zoom.  I've tried removing the incorrect tag programatically but it still exhibits same behavior.  Need to dig further into the cause and potential workarounds.
+- Next 13's server components are incompatible with React Context, preventing use of React Aria's SSR context provider.  This throws a lot of warnings to the console, and in some cases can cause an additional render during hydration.  Any performance impact is not noticeable to the user.
 - In Next 13's app folder, external packages which use client side features, are rendered as server components and fail. Since `ods-base` is an external client component library, a file has been created which is marked as a client component, and re-exports all components from `ods-base`.  These components can now be imported from `#/components/ods` and Next 13 treats them as client components.
