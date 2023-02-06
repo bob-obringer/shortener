@@ -10,7 +10,11 @@ export function ClientLinkFormWrapper() {
   const { isEditing, setIsEditing } = useShortenedLinkContext();
 
   return (
-    <section className={cx("flex-1 lg:block", { hidden: !isEditing })}>
+    <section
+      className={cx("flex-1 lg:block px-4 md:px-2 lg: px-0", {
+        hidden: !isEditing,
+      })}
+    >
       <Text as="div" className="lg:hidden pb-4 pl-2">
         <Link href="/" onClick={() => setIsEditing(false)}>
           Back to list
