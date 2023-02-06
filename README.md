@@ -2,7 +2,7 @@
 https://shortener.obringer.net
 
 ## Overview
-The Shortener uses the following:
+The shortener uses the following:
 - NextJS 13 app folder, including new router and server components
 - react-hook-form to manage form state and behavior
 - Taiwind for layout
@@ -11,8 +11,8 @@ The Shortener uses the following:
   - radix-ui (headless components)
 - sass modules for more targeted styling of in app components
 - `pnpm` for package management (although any package manager should work)
-- Tested using Playwright
-- Deployed to Vercel
+- Playwright for Testing
+- Vercel for Hosting
 
 
 ## Features
