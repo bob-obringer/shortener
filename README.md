@@ -78,7 +78,7 @@ The combination of these have been a great experience and made it easy to focus 
 - End to end testing is done via `Playwright`.  It's been my very lightweight test automation platform for a few years.  Low overhead, fast, simple to set up, easy to run, and includes a nice inspector and other debugging tools.
 - Tests should focus mostly on user behavior, end to end tests allow us to most accurately test the application as it is used in the real world.
 - Unit and full mount component tests are not included here as functionality is generally covered by end to end tests.  They are more appropriate for shared code and components and covering edge cases that may be more difficult to test using full end to end tests.
-- If unit and component tests were needed, `jest` would be the test runner, and `react-testing-library` would be used for mounting components.
+- If unit and component tests were included, `jest` would be the test runner, and `react-testing-library` would be used for testing components.
 
 ## Known Issues
 - Light mode is mostly working but colors still need work.  To manually switch to light mode, on the html tag change the `ods-dark-mode` class name to `ods-light-mode` (these can be applied to specific containers further down to mix modes)
