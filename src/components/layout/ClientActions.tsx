@@ -2,7 +2,7 @@
 
 import { Button } from "#/components/ods";
 import { useShortenedLinkContext } from "#/app/ShortenedLinkContext";
-import { TrashIcon, ReloadIcon, DownloadIcon } from "@radix-ui/react-icons";
+import { PlusIcon, ReloadIcon, DownloadIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
 
 export function ClientActions() {
@@ -30,7 +30,7 @@ export function ClientActions() {
 
       <Button asChild>
         <Link href="/" onClick={() => setIsEditing(true)}>
-          Create New Link
+          <PlusIcon />
         </Link>
       </Button>
     </div>

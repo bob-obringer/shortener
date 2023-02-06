@@ -3,7 +3,8 @@ import { useShortenedLinkContext } from "#/app/ShortenedLinkContext";
 import { useForm } from "react-hook-form";
 import cx from "classnames";
 import styles from "#/components/LinkForm/LinkForm.module.scss";
-import { Button, FocusRing, Text, TextField } from "#/components//ods";
+import { Button, FocusRing, Text, TextField } from "#/components/ods";
+import { TrashIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
 
 export function LinkForm({ link }: { link?: ShortenedLink }) {
@@ -63,14 +64,14 @@ export function LinkForm({ link }: { link?: ShortenedLink }) {
           {...uriField}
           errorMessage={errors.uri && "Invalid URL"}
         />
-        <div className="flex justify-end gap-2">
+        <div className="flex justify-between">
           {link?.id && (
             <Button
               onPress={handleDeleteLink}
               intent="destroy"
               displayType="outline"
             >
-              Delete
+              <TrashIcon />
             </Button>
           )}
           <Button isDisabled={!isValid} type="submit">

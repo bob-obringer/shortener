@@ -14,7 +14,7 @@ export function SiteHeader() {
   return (
     <div className={styles.header}>
       <div className="container flex justify-between items-center">
-        <Heading level={2} size="l">
+        <Heading level={2}>
           <Link href="/">Shortener</Link>
         </Heading>
         <ClientActions />
