@@ -5,7 +5,7 @@ https://shortener.obringer.net
 The shortener uses the following:
 - NextJS 13 app folder, including new router and server components
 - react-hook-form to manage form state and behavior
-- Taiwind for layout
+- Tailwind for layout
 - ods-base for themeable components (my own component library/design system base)
   - react-aria (accessibility behaviors)
   - radix-ui (headless components)
