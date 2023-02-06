@@ -1,1 +1,3 @@
-export default function LinkPage() {}
+export default function LinkPage() {
+  return null;
+}

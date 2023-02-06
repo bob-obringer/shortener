@@ -1,7 +1,6 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@bob-obringer/ods': 0.0.13
   '@next/font': 13.1.6
   '@playwright/test': ^1.30.0
   '@types/node': 18.11.18
@@ -12,6 +11,7 @@ specifiers:
   eslint: 8.33.0
   eslint-config-next: 13.1.6
   next: 13.1.6
+  ods-base: 0.0.25
   postcss: ^8.4.21
   prettier: ^2.8.3
   react: 18.2.0
@@ -22,7 +22,6 @@ specifiers:
   typescript: 4.9.5
 
 dependencies:
-  '@bob-obringer/ods': 0.0.13_zdfmf3kv7eecifu6pmfv4p4pf4
   '@next/font': 13.1.6
   '@types/node': 18.11.18
   '@types/react': 18.0.27
@@ -31,6 +30,7 @@ dependencies:
   eslint: 8.33.0
   eslint-config-next: 13.1.6_4vsywjlpuriuw3tl5oq6zy5a64
   next: 13.1.6_5mhhrw5dq6gnbuirj2awdzvyuu
+  ods-base: 0.0.25_zdfmf3kv7eecifu6pmfv4p4pf4
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-hook-form: 7.43.0_react@18.2.0
@@ -51,25 +51,6 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       regenerator-runtime: 0.13.11
-    dev: false
-
-  /@bob-obringer/ods/0.0.13_zdfmf3kv7eecifu6pmfv4p4pf4:
-    resolution: {integrity: sha512-waC3/m8ZcKrb3EuMwxmB9LBr8FVYDhyPZn1FJTVrbVF40AzNfQfe1WIdRrTRdl/Sw9uv1qRftAAIyeG9hxKGiA==, tarball: https://npm.pkg.github.com/download/@bob-obringer/ods/0.0.13/c37f64dd08f40939fa898dcb02edc50235957079}
-    peerDependencies:
-      react: ^18.2.0
-      react-dom: ^18.2.0
-    dependencies:
-      '@radix-ui/react-icons': 1.1.1_react@18.2.0
-      '@radix-ui/react-popover': 1.0.3_5ndqzdd6t4rivxsukjv3i3ak2q
-      '@radix-ui/react-slot': 1.0.1_react@18.2.0
-      class-variance-authority: 0.4.0_typescript@4.9.5
-      react: 18.2.0
-      react-aria: 3.22.0_biqbaboplfbrettd7655fr4n2y
-      react-dom: 18.2.0_react@18.2.0
-      react-stately: 3.20.0_react@18.2.0
-    transitivePeerDependencies:
-      - '@types/react'
-      - typescript
     dev: false
 
   /@eslint/eslintrc/1.4.1:
@@ -3444,6 +3425,25 @@ packages:
       call-bind: 1.0.2
       define-properties: 1.1.4
       es-abstract: 1.21.1
+    dev: false
+
+  /ods-base/0.0.25_zdfmf3kv7eecifu6pmfv4p4pf4:
+    resolution: {integrity: sha512-UHvY1Lnroo83pg31uVAlzUkQccVv2vrtsKThopNOjje9ksdZbDLNjbep+V9G0X1W/OAMtBssPzNZBOrmd0a8/Q==}
+    peerDependencies:
+      react: ^18.2.0
+      react-dom: ^18.2.0
+    dependencies:
+      '@radix-ui/react-icons': 1.1.1_react@18.2.0
+      '@radix-ui/react-popover': 1.0.3_5ndqzdd6t4rivxsukjv3i3ak2q
+      '@radix-ui/react-slot': 1.0.1_react@18.2.0
+      class-variance-authority: 0.4.0_typescript@4.9.5
+      react: 18.2.0
+      react-aria: 3.22.0_biqbaboplfbrettd7655fr4n2y
+      react-dom: 18.2.0_react@18.2.0
+      react-stately: 3.20.0_react@18.2.0
+    transitivePeerDependencies:
+      - '@types/react'
+      - typescript
     dev: false
 
   /once/1.4.0:
