@@ -4,10 +4,10 @@ import cx from "classnames";
 
 import "#/styles/reset.css";
 import "./global.css";
-import "@bob-obringer/ods/dist/ods-components.css";
-import "@bob-obringer/ods/dist/ods-theme.css";
-import "@bob-obringer/ods/dist/ods-dark-mode.css";
-import "@bob-obringer/ods/dist/ods-light-mode.css";
+import "ods-base/dist/ods-components.css";
+import "ods-base/dist/ods-theme.css";
+import "ods-base/dist/ods-dark-mode.css";
+import "ods-base/dist/ods-light-mode.css";
 import "#/styles/theme.css";
 import { ShortenedLinkContextProvider } from "#/app/ShortenedLinkContext";
 
