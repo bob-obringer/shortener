@@ -10,7 +10,7 @@ The shortener uses the following:
   - react-aria (accessibility behaviors)
   - radix-ui (headless components)
 - sass modules for more targeted styling of in app components
-- `pnpm` for package management
+- pnpm for package management
 - Playwright for Testing
 - Vercel for Hosting
 
