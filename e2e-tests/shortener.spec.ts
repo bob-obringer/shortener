@@ -21,7 +21,7 @@ test("Full flow", async ({ page }) => {
   const uriField = page.getByLabel("URL");
   const errorMessage = page.getByText("Invalid URL");
   const saveButton = page.getByRole("button", { name: "Save" });
-  const deleteButton = page.getByRole("button", { name: "Delete" });
+  const deleteButton = page.getByRole("button", { name: "Delete Link" });
 
   // fill with valid values
   await nameField.fill("Bob's Site");
@@ -41,18 +41,16 @@ test("Full flow", async ({ page }) => {
   );
 
   const shortLink = (await page.url()).split("/").pop();
-  const date = new Date().toISOString().substring(0, 10);
-  const newLinkSelectorString = `${shortLink} • ${date} 0 Bob's Site`;
+  // const date = new Date().toISOString().substring(0, 10);
+  // const newLinkSelectorString = `${shortLink} • ${date} 0 Bob's Site`;
 
   // this also tests accessibility (we should describe each bit better it better, but...)
-  const newRecord = page.getByRole("link", { name: newLinkSelectorString });
+  const newRecord = page.getByTestId(`link-${shortLink}`);
   await expect(newRecord).toBeVisible();
   await expect(newRecord).toHaveAttribute("aria-current", "true");
 
   // get another link
-  const anotherLink = page.getByRole("link", {
-    name: "igkb6r9t • 2022-12-01 91 www.youtube.com/watch?...",
-  });
+  const anotherLink = page.getByTestId("link-igkb6r9t");
   await anotherLink.click();
 
   // make sure we navigated and the form is updated
@@ -65,9 +63,7 @@ test("Full flow", async ({ page }) => {
   // edit it
   await nameField.fill("Test Name");
   await saveButton.click();
-  const updatedLink = page.getByRole("link", {
-    name: "igkb6r9t • 2022-12-01 91 Test Name",
-  });
+  const updatedLink = page.getByTestId("link-igkb6r9t");
   await expect(updatedLink).toHaveAttribute("aria-current", "true");
 
   // delete it

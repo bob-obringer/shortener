@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "e2e": "npx playwright",
+    "e2e": "npx playwright test",
     "e2e:debug": "PWDEBUG=console npx playwright test"
   },
   "dependencies": {

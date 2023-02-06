@@ -1,11 +1,9 @@
 import { SiteHeader } from "#/components/layout/SiteHeader";
-import { ReactNode } from "react";
 
 import { ClientLinkFormWrapper } from "#/app/(shortener)/ClientLinkFormWrapper";
 import { ClientLinkListWrapper } from "#/app/(shortener)/ClientLinkListWrapper";
-import styles from "./ShortenerLayout.module.scss";
 
-export default function RootLayout({ children }: { children: ReactNode }) {
+export default function RootLayout() {
   return (
     <>
       <SiteHeader />

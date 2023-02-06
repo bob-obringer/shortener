@@ -6,8 +6,10 @@ import styles from "#/components/LinkForm/LinkForm.module.scss";
 import { Button, FocusRing, Text, TextField } from "#/components/ods";
 import { TrashIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 export function LinkForm({ link }: { link?: ShortenedLink }) {
+  const router = useRouter();
   const { insertLink, updateLink, deleteLink } = useShortenedLinkContext();
 
   const {
@@ -30,7 +32,9 @@ export function LinkForm({ link }: { link?: ShortenedLink }) {
   });
 
   function handleDeleteLink() {
-    if (link) deleteLink(link.id);
+    if (link) {
+      deleteLink(link.id);
+    }
   }
 
   const nameField = register("name");
@@ -68,6 +72,7 @@ export function LinkForm({ link }: { link?: ShortenedLink }) {
           {link?.id && (
             <Button
               onPress={handleDeleteLink}
+              aria-label="Delete Link"
               intent="destroy"
               displayType="outline"
             >

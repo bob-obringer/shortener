@@ -91,9 +91,9 @@ export function ShortenedLinkContextProvider({
   }, []);
 
   function deleteLink(idToRemove: string) {
-    // redirectToRouteAfterLocalStorageUpdate.current = `/`;
-    // console.log({ links, idToRemove });
     router.push("/");
+    // if this fires before router push is finished, we get a weird flash
+    // should probably handle this on route change instead of this delay
     setTimeout(() => {
       setLinksState((links: ShortenedLink[] = []) =>
         links.filter(({ id }) => id !== idToRemove)
@@ -102,7 +102,6 @@ export function ShortenedLinkContextProvider({
   }
 
   function getUriParts(uriString: string) {
-    // we shouldn't get here if invalid, but this throws anyway (maybe handle better?)
     const url = new URL(uriString);
     return {
       scheme: url.protocol.replace(":", ""),

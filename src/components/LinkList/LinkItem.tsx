@@ -12,10 +12,13 @@ export function LinkItem({ link }: { link: ShortenedLink }) {
   const isActive = segs[1] === link.raw_shortened_path_id;
 
   return (
-    <li>
+    <li
+      data-testid={`link-${link.raw_shortened_path_id}`}
+      aria-current={isActive}
+    >
       <FocusRing>
         <Link
-          aria-current
+          className="block"
           href={`/link/${link.raw_shortened_path_id}`}
           onClick={() => {
             setIsEditing(true);

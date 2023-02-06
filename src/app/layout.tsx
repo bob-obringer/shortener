@@ -10,6 +10,7 @@ import "ods-base/dist/ods-dark-mode.css";
 import "ods-base/dist/ods-light-mode.css";
 import "#/styles/theme.css";
 import { ShortenedLinkContextProvider } from "#/app/ShortenedLinkContext";
+import ClientBetaFixes from "#/app/ClientBetaFixes";
 
 const sansSerifFont = Montserrat({
   subsets: ["latin"],
@@ -32,6 +33,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         } as CSSProperties
       }
     >
+      <ClientBetaFixes />
       <body className="flex flex-col">
         <ShortenedLinkContextProvider>{children}</ShortenedLinkContextProvider>
       </body>
