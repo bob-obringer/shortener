@@ -6,4 +6,5 @@ body {
   background-color: var(--site-background);
   color: var(--ods-text-color-normal);
   height: 100svh;
+  overflow: hidden;
 }

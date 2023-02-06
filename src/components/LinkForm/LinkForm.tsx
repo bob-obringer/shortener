@@ -74,7 +74,7 @@ export function LinkForm({ link }: { link?: ShortenedLink }) {
               <TrashIcon />
             </Button>
           )}
-          <Button isDisabled={!isValid} type="submit">
+          <Button isDisabled={!isValid} type="submit" className="ml-auto">
             Save
           </Button>
         </div>

@@ -41,7 +41,7 @@ export function Facets({
   }
 
   return (
-    <div className="flex items-center justify-between mb-4">
+    <div className="flex items-center justify-between mb-4 px-4 md:px-2 lg:px-0">
       <div className="flex items-center">
         <Text
           as="div"
@@ -77,7 +77,6 @@ export function Facets({
           // @ts-ignore -- todo: types on textfield are wrong, fix this
           if (!/[a-zA-Z0-9\s]+/.test(e.data)) e.preventDefault();
         }}
-        // pattern="[a-zA-Z0-9\s]+"
       />
     </div>
   );

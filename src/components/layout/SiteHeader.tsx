@@ -13,7 +13,7 @@ import { ClientActions } from "#/components/layout/ClientActions";
 export function SiteHeader() {
   return (
     <div className={styles.header}>
-      <div className="container flex justify-between items-center">
+      <div className="container px-4 py-2 flex justify-between items-center">
         <Heading level={2}>
           <Link href="/">Shortener</Link>
         </Heading>

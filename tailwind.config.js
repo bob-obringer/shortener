@@ -4,11 +4,6 @@ module.exports = {
   theme: {
     container: {
       center: true,
-      padding: {
-        DEFAULT: "0.5rem",
-        md: "1rem",
-        lg: "2rem",
-      },
     },
   },
   plugins: [],
