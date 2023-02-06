@@ -11,7 +11,7 @@ export function ClientLinkFormWrapper() {
 
   return (
     <section
-      className={cx("flex-1 lg:block px-4 md:px-2 lg: px-0", {
+      className={cx("flex-1 lg:block px-4 md:px-2 lg:px-0", {
         hidden: !isEditing,
       })}
     >
