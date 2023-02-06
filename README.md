@@ -41,6 +41,8 @@ pnpm dev
 
 ## Testing
 Playwright end to end tests have been created to mirror user behavior.
+
+Currently only set up to test a local environment, so a server must already be running at `http://localhost:3000`
 ```
 pnpm e2e
 ```
