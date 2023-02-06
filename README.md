@@ -10,7 +10,7 @@ The shortener uses the following:
   - react-aria (accessibility behaviors)
   - radix-ui (headless components)
 - sass modules for more targeted styling of in app components
-- `pnpm` for package management (although any package manager should work)
+- `pnpm` for package management
 - Playwright for Testing
 - Vercel for Hosting
 
@@ -24,7 +24,8 @@ The shortener uses the following:
 - Edit/Info page
   - Allows editing link, including optional friendly name
   - Allows deleting of link
-  - allows navigation to shortened link, incrementing count, and redirecting to full uri
+  - Allows navigation to shortened link, incrementing count, and redirecting to full uri
+  - Validates url and provides appropraite error state
 - Fully responsive
 - Fully accessible and navigable with keyboard exclusively
 - Header download button to download JSON of current state of links
