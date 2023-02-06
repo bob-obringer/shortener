@@ -1,8 +1,8 @@
 .site-theme {
-  --oc-typo-heading-margin-top: 0.25em;
-  --oc-typo-heading-weight-light: 100;
-  --oc-typo-heading-weight-medium: 400;
-  --oc-typo-heading-weight-heavy: 700;
+  --ods-typo-heading-margin-top: 0.25em;
+  --ods-typo-heading-weight-light: 100;
+  --ods-typo-heading-weight-medium: 400;
+  --ods-typo-heading-weight-heavy: 700;
 }
 
 .ods-light-mode {

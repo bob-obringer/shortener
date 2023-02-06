@@ -1,9 +1,10 @@
-import { DefaultTags } from "#/app/DefaultTags";
-
 export default function Head() {
   return (
     <>
-      <DefaultTags />
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1"
+      />
       <title>Shortener</title>
       <meta name="description" content="Link Shortener" />
     </>
