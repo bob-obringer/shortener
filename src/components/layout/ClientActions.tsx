@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "../../../../ods";
+import { Button } from "#/components/ods";
 import { useShortenedLinkContext } from "#/app/ShortenedLinkContext";
 import Link from "next/link";
 

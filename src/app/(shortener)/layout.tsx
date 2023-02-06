@@ -1,15 +1,8 @@
 import { SiteHeader } from "#/components/layout/SiteHeader";
 import { ReactNode } from "react";
 
-import "#/styles/reset.css";
-import "#/app/global.css";
-import "@bob-obringer/ods/dist/ods-components.css";
-import "@bob-obringer/ods/dist/ods-theme.css";
-import "@bob-obringer/ods/dist/ods-dark-mode.css";
-import "@bob-obringer/ods/dist/ods-light-mode.css";
-import "#/styles/theme.css";
-import { ClientLinkFormWrapper } from "#/app/ClientLinkFormWrapper";
-import { ClientLinkListWrapper } from "#/app/ClientLinkListWrapper";
+import { ClientLinkFormWrapper } from "#/app/(shortener)/ClientLinkFormWrapper";
+import { ClientLinkListWrapper } from "#/app/(shortener)/ClientLinkListWrapper";
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
