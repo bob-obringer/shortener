@@ -1,5 +1,5 @@
 {
-  "name": "sona-shortener",
+  "name": "@bob-obringer/shortener",
   "version": "0.1.0",
   "private": true,
   "scripts": {
