@@ -8,7 +8,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <>
       <SiteHeader />
-      <main className="container py-5 flex gap-8 flex-1 overflow-hidden">
+      <main className="container flex gap-8 flex-1 overflow-hidden pt-5 pb-0 md:pb-5">
         <ClientLinkListWrapper />
         <ClientLinkFormWrapper />
       </main>
